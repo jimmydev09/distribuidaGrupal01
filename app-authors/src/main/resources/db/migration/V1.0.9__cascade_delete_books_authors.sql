@@ -1,0 +1,8 @@
+ALTER TABLE books_authors
+DROP CONSTRAINT FK_BOOKS_AUTHORS_ON_AUTHORS;
+
+ALTER TABLE books_authors
+    ADD CONSTRAINT FK_BOOKS_AUTHORS_ON_AUTHORS
+        FOREIGN KEY (authors_id)
+            REFERENCES authors(id)
+            ON DELETE CASCADE;

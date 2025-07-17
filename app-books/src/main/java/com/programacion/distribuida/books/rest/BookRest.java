@@ -23,6 +23,7 @@ import java.util.Collections;
 import java.util.List;
 
 
+@CrossOrigin(origins = "http://localhost:8081")
 @RestController
 @RequestMapping(path = "/books", produces = MediaType.APPLICATION_JSON_VALUE)
 @Transactional
